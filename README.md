@@ -1,6 +1,6 @@
 # pre-commit-conventional-commits
 
-> **Beta** -- DevRail is under active development. Standards, tooling, and hook behavior may change without notice. See [STABILITY.md](STABILITY.md) for details.
+> DevRail `v1` is stable. See [STABILITY.md](STABILITY.md) for component status.
 
 A [pre-commit](https://pre-commit.com/) hook that enforces [Conventional Commits](https://www.conventionalcommits.org/) with DevRail-specific types and scopes.
 
