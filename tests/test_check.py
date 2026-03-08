@@ -68,6 +68,48 @@ class TestValidCommitMessages:
         )
         assert is_valid
 
+    def test_feat_ruby(self):
+        is_valid, _ = validate_commit_message(
+            "feat(ruby): add brakeman security scanner"
+        )
+        assert is_valid
+
+    def test_feat_go(self):
+        is_valid, _ = validate_commit_message(
+            "feat(go): add golangci-lint configuration"
+        )
+        assert is_valid
+
+    def test_feat_javascript(self):
+        is_valid, _ = validate_commit_message(
+            "feat(javascript): add eslint flat config"
+        )
+        assert is_valid
+
+    def test_feat_rust(self):
+        is_valid, _ = validate_commit_message(
+            "feat(rust): add clippy and rustfmt checks"
+        )
+        assert is_valid
+
+    def test_chore_security(self):
+        is_valid, _ = validate_commit_message(
+            "chore(security): update gitleaks configuration"
+        )
+        assert is_valid
+
+    def test_docs_changelog(self):
+        is_valid, _ = validate_commit_message(
+            "docs(changelog): add v1.1.0 release notes"
+        )
+        assert is_valid
+
+    def test_chore_release(self):
+        is_valid, _ = validate_commit_message(
+            "chore(release): tag v1.1.0"
+        )
+        assert is_valid
+
     def test_description_with_numbers(self):
         is_valid, _ = validate_commit_message(
             "chore(container): bump python from 3.11 to 3.12"
@@ -234,9 +276,16 @@ class TestErrorMessageQuality:
         assert "terraform" in error
         assert "bash" in error
         assert "ansible" in error
+        assert "ruby" in error
+        assert "go" in error
+        assert "javascript" in error
+        assert "rust" in error
         assert "container" in error
         assert "makefile" in error
         assert "standards" in error
+        assert "security" in error
+        assert "changelog" in error
+        assert "release" in error
 
     def test_error_shows_examples(self):
         _, error = validate_commit_message("bad message")

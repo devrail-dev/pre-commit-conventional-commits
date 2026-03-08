@@ -23,10 +23,17 @@ VALID_SCOPES = frozenset({
     "terraform",
     "bash",
     "ansible",
+    "ruby",
+    "go",
+    "javascript",
+    "rust",
     "container",
     "ci",
     "makefile",
     "standards",
+    "security",
+    "changelog",
+    "release",
 })
 
 # Regex pattern for the conventional commit subject line.
