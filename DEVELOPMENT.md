@@ -61,10 +61,14 @@ type(scope): description
 | `ruby` | Ruby tooling, configs, or standards |
 | `go` | Go tooling, configs, or standards |
 | `javascript` | JavaScript/TypeScript tooling, configs, or standards |
+| `rust` | Rust tooling, configs, or standards |
 | `container` | Dev-toolchain container image |
 | `ci` | CI/CD pipeline configuration |
 | `makefile` | Makefile targets and patterns |
 | `standards` | DevRail standards documentation |
+| `security` | Security tooling and configuration |
+| `changelog` | Changelog and release notes |
+| `release` | Release process and tagging |
 
 <!-- /devrail:commits -->
 

@@ -7,9 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
+## [1.1.0] - 2026-03-08
 
-- Updated beta banner to v1 stable
+### Added
+
+- Language scopes: ruby, go, javascript, rust
+- Workflow scopes: security, changelog, release
+- Explicit test cases for all new scopes
+
+### Fixed
+
+- Scope validation now matches all scopes documented in DEVELOPMENT.md
 
 ## [1.0.0] - 2026-02-20
 

@@ -32,10 +32,17 @@ class TestValidScopes:
             "terraform",
             "bash",
             "ansible",
+            "ruby",
+            "go",
+            "javascript",
+            "rust",
             "container",
             "ci",
             "makefile",
             "standards",
+            "security",
+            "changelog",
+            "release",
         }
         assert VALID_SCOPES == expected
 
@@ -48,10 +55,17 @@ class TestValidScopes:
             "terraform",
             "bash",
             "ansible",
+            "ruby",
+            "go",
+            "javascript",
+            "rust",
             "container",
             "ci",
             "makefile",
             "standards",
+            "security",
+            "changelog",
+            "release",
         }
         assert VALID_SCOPES - expected == set()
 
